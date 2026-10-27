@@ -1,0 +1,65 @@
+{
+  "id": "oubliette",
+  "title": "oubliette",
+  "version": "0.0.1",
+
+
+  "manifest": "https://raw.githubusercontent.com/CodaBool/vtt-oubliette/main/module.json",
+  "changelog": "https://github.com/CodaBool/vtt-oubliette/blob/main/changelog.md",
+  "download": "https://github.com/CodaBool/vtt-oubliette/releases/download/v0.0.1/oubliette.zip",
+  "url": "https://github.com/CodaBool/vtt-oubliette",
+  "bugs": "https://github.com/CodaBool/vtt-oubliette/issues",
+  "description": "<p>Liminal Horror module about escaping a psych ward.</p>",
+
+
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14"
+  },
+  "esmodules": [
+    "main.js"
+  ],
+  "authors": [
+    {
+      "name": "CodaBool",
+      "discord": "codabool",
+      "email": "codabool@pm.me",
+      "url": "https://codabool.com"
+    }
+  ],
+  "flags": {
+    "canUpload": true
+  },
+
+  "quickstart": {
+      "postImport": true,
+      "world": {
+          "background": "modules/oubliette/img/cover.webp",
+          "cover": "modules/oubliette/img/cover.webp"
+      }
+  },
+
+  "packs": [
+    {
+      "name": "oubiette",
+      "label": "oubiette",
+      "path": "packs/oubiette",
+      "type": "Adventure",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "liminal-horror",
+      "flags": {}
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "liminal-horror",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  }
+}
