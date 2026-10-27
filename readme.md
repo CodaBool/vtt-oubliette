@@ -6,7 +6,11 @@
 
 ### Quick Start
 
-Paste this manifest URL: ``
+Paste this manifest URL:
+
+```sh
+https://raw.githubusercontent.com/CodaBool/vtt-oubliette/main/module.json
+```
 
 ### Issues?
 Create one [here](https://github.com/CodaBool/vtt-oubliette/issues)
